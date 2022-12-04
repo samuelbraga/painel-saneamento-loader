@@ -1,0 +1,8 @@
+{
+    "indicators": [
+        {
+            "indicator": "dados_gerais_populacao_populacao",
+            "params": "?SE%5Bg%5D=0&SE%5Bs%5D=1&SE%5Bid%5D=POP&SE%5Bo%5D=e"
+        }
+    ]
+}
