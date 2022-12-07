@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  pg_client:
+    environment:
+      PGDATABASE: ${pg_database}
+      PGHOST: ${pg_host}
+      PGPORT: ${pg_port}
+      PGUSER: ${pg_user}
+      PGPASSWORD: ${pg_password}
+    volumes:
+      - ./artifacts/:/opt/
+    build:
+      context: .
+      dockerfile: ./bin/Dockerfile
+  
+  generator:
+    volumes:
+      - ./artifacts/:/app/artifacts
+    build:
+      context: .
+      dockerfile: Dockerfile

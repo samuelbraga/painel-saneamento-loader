@@ -1,0 +1,7 @@
+.docs
+.deploy
+.github
+.env
+.vscode
+.pytest_cache
+env.template
