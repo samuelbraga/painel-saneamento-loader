@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from typing import List, Tuple
+from typing import Any, List, Tuple
 
 import pandas
 
@@ -14,9 +14,12 @@ class Reader():
     def __init__(self) -> None:
         pass
 
+    def _clean_column_name(self, column_name: str):
+        return str(column_name).replace(' ', '')
+
     def _calc_region_and_ibge_code(
         self,
-        localidades: List[Tuple[str, str, int]]
+        localidades: List[Any]
     ) -> Tuple[List[str], List[int]]:
         codigo_ibge: List[int] = []
         tipo_regiao: List[str] = []
@@ -25,11 +28,15 @@ class Reader():
                 codigo_ibge.append(item[1])
                 tipo_regiao.append('Pais')
             else:
-                tipo_regiao.append(item[1])
-                codigo_ibge.append(item[2])
+                tipo_regiao.append(item[-2])
+                codigo_ibge.append(item[-1])
         return (tipo_regiao, codigo_ibge)
 
     def _clean_local_column(self, df: pandas.DataFrame) -> pandas.DataFrame:
+        df['Nome_Regiao'] = df['Localidade'].str.replace(
+            r" \(.*\)", "", regex=True)
+        df['Nome_Regiao'] = df['Nome_Regiao'].str.replace(
+            r"[\"\',]", '', regex=True)
         df['Localidade'] = df['Localidade'].str.replace("(", "", regex=True)
         df['Localidade'] = df['Localidade'].str.replace(")", "", regex=True)
         df['Localidade'] = df['Localidade'].str.split()
@@ -39,7 +46,6 @@ class Reader():
 
         df = df.assign(Codigo_IBGE=codigo_ibge)
         df = df.assign(Tipo_Regiao=tipo_regiao)
-        df['Localidade'] = df['Localidade'].str[0]
         return df
 
     def reder_file(self) -> pandas.DataFrame:
@@ -52,6 +58,7 @@ class Reader():
         df.columns = df.iloc[0]
         df = df[1:]
         df.reset_index(drop=True, inplace=True)
+        df = df.rename(columns=self._clean_column_name)
 
         df = self._clean_local_column(df)
         return df

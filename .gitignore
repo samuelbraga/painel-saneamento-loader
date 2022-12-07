@@ -174,4 +174,7 @@ poetry.toml
 # Ignore dynaconf secret files
 .secrets.*
 
+# Ignore sql files
+*.sql
+
 # End of https://www.toptal.com/developers/gitignore/api/python
