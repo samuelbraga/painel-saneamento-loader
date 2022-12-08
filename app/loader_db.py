@@ -31,13 +31,15 @@ class LoaderDB(ILoaderDB):
         df: pandas.DataFrame,
         table_name: str
     ) -> None:
+        print(table_name, "STARTED")
+        columns = df.columns
         for _, row in df.iterrows():
             nome_regiao: str = row['Nome_Regiao']
             codigo_ibge = int(row['Codigo_IBGE'])
             tipo_regiao: str = row['Tipo_Regiao']
-            for ano in range(2010, 2021):
-                if (row[f'{ano}.0'] != '-'):
-                    valor = float(row[f'{ano}.0'])
+            for ano in range(1, 12):
+                if (row[str(columns[ano])] != '-'):
+                    valor = float(row[str(columns[ano])])
                     insert = self.insert_template.format(
                         table_name=table_name,
                         codigo_ibge=codigo_ibge,
@@ -47,3 +49,4 @@ class LoaderDB(ILoaderDB):
                         ano=ano,
                         ano_codigo_ibge=f'{ano}-{codigo_ibge}')
                     self.writer.write_file(table_name, insert)
+        print(table_name, "DONE")

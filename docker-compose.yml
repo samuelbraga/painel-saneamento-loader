@@ -15,7 +15,7 @@ services:
   
   generator:
     volumes:
-      - ./artifacts/:/app/artifacts
+      - ./:/app
     build:
       context: .
       dockerfile: Dockerfile
