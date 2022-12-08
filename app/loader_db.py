@@ -33,6 +33,8 @@ class LoaderDB(ILoaderDB):
     ) -> None:
         print(table_name, "STARTED")
         columns = df.columns
+        anos = [2021, 2020, 2019, 2018, 2017, 2016,
+                2015, 2014, 2013, 2012, 2011, 2010]
         for _, row in df.iterrows():
             nome_regiao: str = row['Nome_Regiao']
             codigo_ibge = int(row['Codigo_IBGE'])
@@ -46,7 +48,7 @@ class LoaderDB(ILoaderDB):
                         nome_regiao=nome_regiao,
                         tipo_regiao=tipo_regiao,
                         valor=valor,
-                        ano=ano,
+                        ano=anos[ano],
                         ano_codigo_ibge=f'{ano}-{codigo_ibge}')
                     self.writer.write_file(table_name, insert)
         print(table_name, "DONE")

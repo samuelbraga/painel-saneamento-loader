@@ -1,935 +1,1168 @@
 {
     "indicators": [
         {
-            "indicator": "dados_gerais_populacao_populacao",
+            "indicator": "dg_pop_pop",
+            "descricao": "dados_gerais_populacao_populacao",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=1&SE%5Bid%5D=POP&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_populacao_populacao_snis",
+            "indicator": "dg_pop_pop_snis",
+            "descricao": "dados_gerais_populacao_populacao_snis",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=1&SE%5Bid%5D=POP_SNIS&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_populacao_populacao_urbana",
+            "indicator": "dg_pop_pop_urb",
+            "descricao": "dados_gerais_populacao_populacao_urbana",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=1&SE%5Bid%5D=POP_URB&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_moradias_moradias",
+            "indicator": "dg_mor_mor",
+            "descricao": "dados_gerais_moradias_moradias",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=1&SE%5Bid%5D=MORADIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_moradias_moradias_urbanas",
+            "indicator": "dg_mor_mor_urb",
+            "descricao": "dados_gerais_moradias_moradias_urbanas",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=2&SE%5Bid%5D=MORADIA_URB&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_moradias_densidade_domiciliar",
+            "indicator": "dg_mor_dens_dom",
+            "descricao": "dados_gerais_moradias_densidade_domiciliar",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=2&SE%5Bid%5D=DES_MOR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_moradias_densidade_domiciliar_urbana",
+            "indicator": "dg_mor_dens_dom_urb",
+            "descricao": "dados_gerais_moradias_densidade_domiciliar_urbana",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=2&SE%5Bid%5D=DES_MOR_URB&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_renda_pib",
+            "indicator": "dg_renda_pib",
+            "descricao": "dados_gerais_renda_pib",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=3&SE%5Bid%5D=PIB&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_renda_pib_per_capta",
+            "indicator": "dg_renda_pib_prc",
+            "descricao": "dados_gerais_renda_pib_per_capta",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=3&SE%5Bid%5D=PIB_PC&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_renda_pib_a_preco_2019",
+            "indicator": "dg_renda_pib_2019",
+            "descricao": "dados_gerais_renda_pib_a_preco_2019",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=3&SE%5Bid%5D=PIB_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_renda_pib_per_capta_preco_2019",
+            "indicator": "dg_renda_pib_prc_2019",
+            "descricao": "dados_gerais_renda_pib_per_capta_preco_2019",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=3&SE%5Bid%5D=PIB_PC_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_area_area_do_municipio",
+            "indicator": "dg_area_area_mun",
+            "descricao": "dados_gerais_area_area_do_municipio",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=4&SE%5Bid%5D=AREA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "dados_gerais_area_densidade_demografica",
+            "indicator": "dg_area_dens_demo",
+            "descricao": "dados_gerais_area_densidade_demografica",
             "params": "SE%5Bg%5D=0&SE%5Bs%5D=4&SE%5Bid%5D=DENSIDADE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacao_de_saneamento_cobertura_moradias_com_banheiro",
+            "indicator": "op_cob_mor_com_ban",
+            "descricao": "operacao_de_saneamento_cobertura_moradias_com_banheiro",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=MOR_COM_BAN&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacao_de_saneamento_cobertura_moradias_sem_banheiro",
+            "indicator": "op_cob_mor_sem_ban",
+            "descricao": "operacao_de_saneamento_cobertura_moradias_sem_banheiro",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=MOR_SEM_BAN&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacao_de_saneamento_cobertura_parcela_das_moradias_com_banheiro",
+            "indicator": "op_cob_par_mor_com_ban",
+            "descricao": "operacao_de_saneamento_cobertura_parcela_das_moradias_com_banheiro",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=MOR_COM_BAN%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacao_de_saneamento_cobertura_parcela_das_moradias_sem_banheiro",
+            "indicator": "op_cob_par_mor_sem_ban",
+            "descricao": "operacao_de_saneamento_cobertura_parcela_das_moradias_sem_banheiro",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=MOR_SEM_BAN%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacao_de_saneamento_cobertura_recebimento_regular_de_agua",
+            "indicator": "op_cob_rec_reg_agua",
+            "descricao": "operacao_de_saneamento_cobertura_recebimento_regular_de_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_AGUA_REGULAR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacao_de_saneamento_cobertura_recebimento_irregular_de_agua",
+            "indicator": "op_cob_rec_irreg_agua",
+            "descricao": "operacao_de_saneamento_cobertura_recebimento_irregular_de_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_AGUA_IRREGULAR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacao_de_saneamento_cobertura_parcela_com_recebimento_regular_de_agua",
+            "indicator": "op_cob_par_rec_reg_agua",
+            "descricao": "operacao_de_saneamento_cobertura_parcela_com_recebimento_regular_de_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=AGUA_REGULAR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_com_recebimento_irregular_de_agua",
+            "indicator": "op_cob_par_rec_irreg_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_com_recebimento_irregular_de_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=AGUA_IRREGULAR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_branca_sem_acesso_a_agua",
+            "indicator": "op_cobc_pop_b_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_branca_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_AGUA_BRANCA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_preta_sem_acesso_a_agua",
+            "indicator": "op_cobc_pop_p_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_preta_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_AGUA_NEGRA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_amarela_sem_acesso_a_agua",
+            "indicator": "op_cobc_pop_a_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_amarela_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_AGUA_AMARELA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_parda_sem_acesso_a_agua",
+            "indicator": "op_cobc_pop_pa_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_parda_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_AGUA_PARDA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_indigena_sem_acesso_a_agua",
+            "indicator": "op_cobc_pop_i_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_indigena_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_AGUA_INDIGENA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_branca_sem_acesso_regular_a_agua",
+            "indicator": "op_cobc_pop_b_sem_acc_reg_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_branca_sem_acesso_regular_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_REG_BRANCA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_preta_sem_acesso_regular_a_agua",
+            "indicator": "op_cobc_pop_p_sem_acc_reg_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_preta_sem_acesso_regular_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_REG_NEGRA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_amarela_sem_acesso_regular_a_agua",
+            "indicator": "op_cobc_pop_a_sem_acc_reg_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_amarela_sem_acesso_regular_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_REG_AMARELA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_parda_sem_acesso_regular_a_agua",
+            "indicator": "op_cobc_pop_pa_sem_acc_reg_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_parda_sem_acesso_regular_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_REG_PARDA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_indigena_sem_acesso_regular_a_agua",
+            "indicator": "op_cobc_pop_i_sem_acc_reg_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_indigena_sem_acesso_regular_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_REG_INDIGENA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_branca_sem_acesso_a_coleta_de_esgoto",
+            "indicator": "op_cobc_pop_b_sem_acc_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_branca_sem_acesso_a_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_ESG_BRANCA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_preta_sem_acesso_a_coleta_de_esgoto",
+            "indicator": "op_cobc_pop_p_sem_acc_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_preta_sem_acesso_a_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_ESG_NEGRA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_amarela_sem_acesso_a_coleta_de_esgoto",
+            "indicator": "op_cobc_pop_a_sem_acc_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_amarela_sem_acesso_a_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_ESG_AMARELA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_parda_sem_acesso_a_coleta_de_esgoto",
+            "indicator": "op_cobc_pop_pa_sem_acc_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_parda_sem_acesso_a_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_ESG_PARDA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_indigena_sem_acesso_a_coleta_de_esgoto",
+            "indicator": "op_cobc_pop_i_sem_acc_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_porcentagem_da_populacao_indigena_sem_acesso_a_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=SEM_ESG_INDIGENA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_com_acesso_a_agua",
+            "indicator": "op_cob_pop_com_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_com_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_COM_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_sem_acesso_a_agua",
+            "indicator": "op_cob_pop_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_SEM_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_com_acesso_a_agua",
+            "indicator": "op_cob_par_da_pop_com_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_com_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_COM_AG%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_sem_acesso_a_agua",
+            "indicator": "op_cob_par_da_pop_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_SEM_AG%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_urbana_com_acesso_a_agua",
+            "indicator": "op_cob_pop_urb_com_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_urbana_com_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_COM_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_urbana_sem_acesso_a_agua",
+            "indicator": "op_cob_pop_urb_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_urbana_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_SEM_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_com_acesso_a_agua",
+            "indicator": "op_cob_par_da_pop_urb_com_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_com_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_COM_AG%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_sem_acesso_a_agua",
+            "indicator": "op_cob_par_da_pop_urb_sem_acc_agua",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_sem_acesso_a_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_SEM_AG%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_com_coleta_de_esgoto",
+            "indicator": "op_cob_pop_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_com_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_COM_ES&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_sem_coleta_de_esgoto",
+            "indicator": "op_cob_pop_sem_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_sem_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_SEM_ES&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_com_coleta_de_esgoto",
+            "indicator": "op_cob_par_da_pop_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_com_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_COM_ES%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_sem_coleta_de_esgoto",
+            "indicator": "op_cob_par_da_pop_sem_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_sem_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_SEM_ES%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_urbana_com_coleta_de_esgoto",
+            "indicator": "op_cob_pop_urb_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_urbana_com_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_COM_ES&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_populacao_urbana_sem_coleta_de_esgoto",
+            "indicator": "op_cob_pop_urb_sem_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_populacao_urbana_sem_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_SEM_ES&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_com_coleta_de_esgoto",
+            "indicator": "op_cob_par_da_pop_urb_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_com_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_COM_ES%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_sem_coleta_de_esgoto",
+            "indicator": "op_cob_par_da_pop_urb_sem_esgoto",
+            "descricao": "operacoes_do_saneamento_cobertura_parcela_da_populacao_urbana_sem_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=11&SE%5Bid%5D=POP_URB_SEM_ES%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_producao_consumo_de_agua",
+            "indicator": "op_prod_con_agua",
+            "descricao": "operacoes_do_saneamento_producao_consumo_de_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=12&SE%5Bid%5D=VOL_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_producao_consumo_per_capta_de_agua",
+            "indicator": "op_prod_con_prc_agua",
+            "descricao": "operacoes_do_saneamento_producao_consumo_per_capta_de_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=12&SE%5Bid%5D=VOL_AG_PC&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_producao_esgoto_coletado",
+            "indicator": "op_prod_esgoto_colet",
+            "descricao": "operacoes_do_saneamento_producao_esgoto_coletado",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=12&SE%5Bid%5D=VOL_ES_COL&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_producao_esgoto_tratado",
+            "indicator": "op_prod_esgoto_trat",
+            "descricao": "operacoes_do_saneamento_producao_esgoto_tratado",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=12&SE%5Bid%5D=VOL_ES_TRATA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_producao_indice_de_esgoto_tratado_referido_a_agua_consumida",
+            "indicator": "op_prod_indice_esgoto_trat_agua",
+            "descricao": "operacoes_do_saneamento_producao_indice_de_esgoto_tratado_referido_a_agua_consumida",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=12&SE%5Bid%5D=VOL_ES_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_producao_esgoto_nao_tratado",
+            "indicator": "op_prod_esgoto_nao_trat",
+            "descricao": "operacoes_do_saneamento_producao_esgoto_nao_tratado",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=12&SE%5Bid%5D=VOL_ES_NTRATA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_eficiencia_perdas_na_distribuicao",
+            "indicator": "op_efi_perdas_dist",
+            "descricao": "operacoes_do_saneamento_eficiencia_perdas_na_distribuicao",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=13&SE%5Bid%5D=IN_PERDA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_eficiencia_perdas_no_faturamento",
+            "indicator": "op_efi_perdas_fat",
+            "descricao": "operacoes_do_saneamento_eficiencia_perdas_no_faturamento",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=13&SE%5Bid%5D=IN_PERDA_FAT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_eficiencia_economias_ativas_por_pessoal_total",
+            "indicator": "op_efi_econ_ativas_pptotal",
+            "descricao": "operacoes_do_saneamento_eficiencia_economias_ativas_por_pessoal_total",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=13&SE%5Bid%5D=IN_019&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_eficiencia_economias_ativas_por_pessoal_proprio",
+            "indicator": "op_efi_econ_ativas_ppproprio",
+            "descricao": "operacoes_do_saneamento_eficiencia_economias_ativas_por_pessoal_proprio",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=13&SE%5Bid%5D=IN_002&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_tarifa_de_agua",
+            "indicator": "op_custerec_tarif_agua",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_tarifa_de_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=TARIFA_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_tarifa_de_coleta_de_esgoto",
+            "indicator": "op_custerec_tarifa_esgoto",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_tarifa_de_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=TARIFA_ES&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_tarifa_dos_servicos_de_saneamento",
+            "indicator": "op_custerec_tarifa_serv_san",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_tarifa_dos_servicos_de_saneamento",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=TARIFA_MEDIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_receita_direta_com_agua",
+            "indicator": "op_custerec_rec_d_com_agua",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_receita_direta_com_agua",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=RECEITA_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_receita_direta_com_coleta_de_esgoto",
+            "indicator": "op_custerec_rec_d_esgoto",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_receita_direta_com_coleta_de_esgoto",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=RECEITA_ES&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_receita_direta_total",
+            "indicator": "op_custerec_rec_d_total",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_receita_direta_total",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=RECEITA_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_receita_direta_total_a_preco_de_2019",
+            "indicator": "op_custerec_rec_d_total_2019",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_receita_direta_total_a_preco_de_2019",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=RECEITA_TOT_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_despesas_per_capta_com_saneamento",
+            "indicator": "op_custerec_desp_prc_san",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_despesas_per_capta_com_saneamento",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=DESP_PC&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_despesas_per_capta_com_saneamento_a_preco_de_2019",
+            "indicator": "op_custerec_desp_prc_san_2019",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_despesas_per_capta_com_saneamento_a_preco_de_2019",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=DESP_PC_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_custos_com_os_servicos_de_saneamento",
+            "indicator": "op_custerec_custos_serv_san",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_custos_com_os_servicos_de_saneamento",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=CUSTO_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_custo_com_o_pessoal",
+            "indicator": "op_custerec_cust_pessoal",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_custo_com_o_pessoal",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=CUSTO_PESSOAL&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_custo_com_produtos_quimicos",
+            "indicator": "op_custerec_cust_pq",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_custo_com_produtos_quimicos",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=CUSTO_QUIM&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_custo_com_energia_eletrica",
+            "indicator": "op_custerec_cust_energia",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_custo_com_energia_eletrica",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=CUSTO_EE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "operacoes_do_saneamento_custos_e_receitas_custo_com_servicos_de_terceiros",
+            "indicator": "op_custerec_cust_serv_terc",
+            "descricao": "operacoes_do_saneamento_custos_e_receitas_custo_com_servicos_de_terceiros",
             "params": "SE%5Bg%5D=1&SE%5Bs%5D=14&SE%5Bid%5D=CUSTO_SERV&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_por_doencas_de_veinculacao_hidrica",
+            "indicator": "bs_saude_inter_totais_doencas_hid",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_por_doencas_de_veinculacao_hidrica",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_diarreia",
+            "indicator": "bs_saude_inter_diarreia",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_diarreia",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_DIARREIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_febre_amarela",
+            "indicator": "bs_saude_inter_febre_a",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_febre_amarela",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_FEBRE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_dengue",
+            "indicator": "bs_saude_inter_dengue",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_dengue",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_DENGUE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_leptospirose",
+            "indicator": "bs_saude_inter_lepto",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_leptospirose",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_LEPTO&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_malaria",
+            "indicator": "bs_saude_inter_mal",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_malaria",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_MALARIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_esquistossomose",
+            "indicator": "bs_saude_inter_esquisto",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_esquistossomose",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_ESQUIST&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_mulheres",
+            "indicator": "bs_saude_inter_totais_mulheres",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_mulheres",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_FEM&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_homens",
+            "indicator": "bs_saude_inter_totais_homens",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_homens",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_MAS&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_0_a_4",
+            "indicator": "bs_saude_inter_totais_0_a_4",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_0_a_4",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_00_04&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_5_a_14",
+            "indicator": "bs_saude_inter_totais_5_a_14",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_5_a_14",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_05_14&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_15_a_19",
+            "indicator": "bs_saude_inter_totais_15_a_19",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_15_a_19",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_15_19&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_20_a_29",
+            "indicator": "bs_saude_inter_totais_20_a_29",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_20_a_29",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_20_29&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_30_a_39",
+            "indicator": "bs_saude_inter_totais_30_a_39",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_30_a_39",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_30_39&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_40_a_59",
+            "indicator": "bs_saude_inter_totais_40_a_59",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_40_a_59",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_40_59&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_60_a_79",
+            "indicator": "bs_saude_inter_totais_60_a_79",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_60_a_79",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_60_79&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_80_ou_mais",
+            "indicator": "bs_saude_inter_totais_80_mais",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_80_ou_mais",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_80%2B&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_brancas",
+            "indicator": "bs_saude_inter_totais_autodec_b",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_brancas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_BRANCA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_pretas",
+            "indicator": "bs_saude_inter_totais_autodec_p",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_pretas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_NEGRA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_amarelas",
+            "indicator": "bs_saude_inter_totais_autodec_a",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_amarelas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_AMARELA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_pardas",
+            "indicator": "bs_saude_inter_totais_autodec_pa",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_pardas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_PARDA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_indigenas",
+            "indicator": "bs_saude_inter_totais_autodec_i",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_totais_de_pessoas_autodeclaradas_indigenas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_VH_INDIGENA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_totais_por_doenças_de_veiculacao_hidrica",
+            "indicator": "bs_saude_incid_inter_totais_doenças_hid",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_totais_por_doenças_de_veiculacao_hidrica",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_VH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_diarreia",
+            "indicator": "bs_saude_incid_inter_diarreia",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_diarreia",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_DIARREIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_febre_amarela",
+            "indicator": "bs_saude_incid_inter_febre_a",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_febre_amarela",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_FEBRE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_dengue",
+            "indicator": "bs_saude_incid_inter_dengue",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_dengue",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_DENGUE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_leptospirose",
+            "indicator": "bs_saude_incid_inter_lepto",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_leptospirose",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_LEPTO&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_malaria",
+            "indicator": "bs_saude_incid_inter_mal",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_malaria",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_MALARIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_esquistossomose",
+            "indicator": "bs_saude_incid_inter_esquisto",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_esquistossomose",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_ESQUIST&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_doencas_de_veinculacao_hidrica",
+            "indicator": "bs_saude_desp_com_inter_doencas_hid",
+            "descricao": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_doencas_de_veinculacao_hidrica",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_VH_INT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_diarreia",
+            "indicator": "bs_saude_desp_com_inter_diarreia",
+            "descricao": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_diarreia",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_DIARREIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_febre_amarela",
+            "indicator": "bs_saude_desp_com_inter_febre_a",
+            "descricao": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_febre_amarela",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_FEBRE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_dengue",
+            "indicator": "bs_saude_desp_com_inter_dengue",
+            "descricao": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_dengue",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_DENGUE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_leptospirose",
+            "indicator": "bs_saude_desp_com_inter_lepto",
+            "descricao": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_leptospirose",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_LEPTO&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_malaria",
+            "indicator": "bs_saude_desp_com_inter_mal",
+            "descricao": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_malaria",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_MALARIA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_esquistossomose",
+            "indicator": "bs_saude_desp_com_inter_esquisto",
+            "descricao": "beneficios_do_saneamento_saude_despesas_com_internacoes_por_esquistossomose",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_ESQUIST&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_obitos_por_doencas_de_veinculacao_hidrica.xls",
+            "indicator": "bs_saude_obt_doencas_hid",
+            "descricao": "beneficios_do_saneamento_saude_obitos_por_doencas_de_veinculacao_hidrica.xls",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=OBITO_VH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_obitos_por_doencas_de_veinculacao_hidrica_0_a_4_anos",
+            "indicator": "bs_saude_obt_doencas_hid_0_a_4_anos",
+            "descricao": "beneficios_do_saneamento_saude_obitos_por_doencas_de_veinculacao_hidrica_0_a_4_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=OBITO_VH_00_04&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_taxa_de_obitos_por_doenca_de_veinculacao_hidrica",
+            "indicator": "bs_saude_tax_de_obt_doenca_hid",
+            "descricao": "beneficios_do_saneamento_saude_taxa_de_obitos_por_doenca_de_veinculacao_hidrica",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_OBITO_VH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_taxa_de_obitos_por_doenca_de_veinculacao_hidrica_0_a_4_anos",
+            "indicator": "bs_saude_tax_de_obt_doenca_hid_0_a_4_anos",
+            "descricao": "beneficios_do_saneamento_saude_taxa_de_obitos_por_doenca_de_veinculacao_hidrica_0_a_4_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_OBITO_00_04_VH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias",
+            "indicator": "bs_saude_inter_doencas_resp",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_em_mulheres",
+            "indicator": "bs_saude_inter_doencas_resp_em_mulheres",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_em_mulheres",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_FEM&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_em_homens",
+            "indicator": "bs_saude_inter_doencas_resp_em_homens",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_em_homens",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_MAS&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_0_a_4_anos",
+            "indicator": "bs_saude_inter_doencas_resp_0_a_4_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_0_a_4_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_00_04&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_5_a_14_anos",
+            "indicator": "bs_saude_inter_doencas_resp_5_a_14_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_5_a_14_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_05_14&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_15_a_19_anos",
+            "indicator": "bs_saude_inter_doencas_resp_15_a_19_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_15_a_19_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_15_19&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_20_a_29_anos",
+            "indicator": "bs_saude_inter_doencas_resp_20_a_29_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_20_a_29_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_20_29&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_30_a_39_anos",
+            "indicator": "bs_saude_inter_doencas_resp_30_a_39_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_30_a_39_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_30_39&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_40_a_59_anos",
+            "indicator": "bs_saude_inter_doencas_resp_40_a_59_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_40_a_59_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_40_59&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_60_a_79_anos",
+            "indicator": "bs_saude_inter_doencas_resp_60_a_79_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_60_a_79_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_60_79&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_mais_de_80_anos",
+            "indicator": "bs_saude_inter_doencas_resp_mais_de_80_anos",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_mais_de_80_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_80%2B&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_brancas",
+            "indicator": "bs_saude_inter_doencas_resp_autodec_bs",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_brancas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_BRANCA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_pretas",
+            "indicator": "bs_saude_inter_doencas_resp_autodec_ps",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_pretas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_NEGRA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_amarelas",
+            "indicator": "bs_saude_inter_doencas_resp_autodec_as",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_amarelas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_AMARELA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_pardas",
+            "indicator": "bs_saude_inter_doencas_resp_autodec_pas",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_pardas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_PARDA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_indigenas",
+            "indicator": "bs_saude_inter_doencas_resp_autodec_is",
+            "descricao": "beneficios_do_saneamento_saude_internacoes_por_doencas_respiratorias_de_pessoas_autodeclaradas_indigenas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INT_RESP_INDIGENA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_custos_das_internacoes_por_doencas_respiratorias",
+            "indicator": "bs_saucustos_das_inter_doencas_resp",
+            "descricao": "beneficios_do_saneamento_saude_custos_das_internacoes_por_doencas_respiratorias",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=DESP_RESP_INT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_obitos_por_doencas_respiratorias",
+            "indicator": "bs_saude_obt_doencas_resp",
+            "descricao": "beneficios_do_saneamento_saude_obitos_por_doencas_respiratorias",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=OBITO_RESP&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_obitos_por_doencas_respiratorias_0_a_4_anos",
+            "indicator": "bs_saude_obt_doencas_resp_0_a_4_anos",
+            "descricao": "beneficios_do_saneamento_saude_obitos_por_doencas_respiratorias_0_a_4_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=OBITO_RESP_00_04&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_doencas_respiratorias",
+            "indicator": "bs_saude_incid_inter_doencas_resp",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_internacoes_por_doencas_respiratorias",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_RESP&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_obitos_por_doencas_respiratorias",
+            "indicator": "bs_saude_incid_de_obt_doencas_resp",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_obitos_por_doencas_respiratorias",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_OBITO_RESP&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_saude_incidencia_de_obitos_por_doencas_respiratorias_0_a_4_anos",
+            "indicator": "bs_saude_incid_de_obt_doencas_resp_0_a_4_anos",
+            "descricao": "beneficios_do_saneamento_saude_incidencia_de_obitos_por_doencas_respiratorias_0_a_4_anos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=21&SE%5Bid%5D=INCIDE_OBITO_00_04_RESP&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_produtividade_afastamentos_do_trabalho",
+            "indicator": "bs_prod_afast_trab",
+            "descricao": "beneficios_do_saneamento_produtividade_afastamentos_do_trabalho",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=22&SE%5Bid%5D=AFASTA_L_N&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_produtividade_custo_com_os_afastamentos_do_trabalho",
+            "indicator": "bs_prod_cust_os_afast_trab",
+            "descricao": "beneficios_do_saneamento_produtividade_custo_com_os_afastamentos_do_trabalho",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=22&SE%5Bid%5D=AFASTA_CUSTO&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_produtividade_renda_das_pessoas_com_saneamento",
+            "indicator": "bs_prod_renda_pessoas_san",
+            "descricao": "beneficios_do_saneamento_produtividade_renda_das_pessoas_com_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=22&SE%5Bid%5D=RENDA_G1&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_produtividade_renda_das_pessoas_sem_saneamento",
+            "indicator": "bs_prod_renda_pessoas_sem_san",
+            "descricao": "beneficios_do_saneamento_produtividade_renda_das_pessoas_sem_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=22&SE%5Bid%5D=RENDA_G2&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_produtividade_renda_media_do_trabalho",
+            "indicator": "bs_prod_renda_media_trab",
+            "descricao": "beneficios_do_saneamento_produtividade_renda_media_do_trabalho",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=22&SE%5Bid%5D=RENDA_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_escolaridade_das_pessoas_com_saneamento",
+            "indicator": "bs_edu_pessoas_san",
+            "descricao": "beneficios_do_saneamento_educacao_escolaridade_das_pessoas_com_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ESCOLARIDADE_G1&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_escolaridade_das_pessas_sem_saneamento",
+            "indicator": "bs_edu_pessas_sem_san",
+            "descricao": "beneficios_do_saneamento_educacao_escolaridade_das_pessas_sem_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ESCOLARIDADE_G2&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_escolaridade_media_da_populacao",
+            "indicator": "bs_edu_media_da_pop",
+            "descricao": "beneficios_do_saneamento_educacao_escolaridade_media_da_populacao",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ESCOLARIDADE_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_atraso_escolar_dos_jovens_com_saneamento",
+            "indicator": "bs_edu_atr_esc_jovens_san",
+            "descricao": "beneficios_do_saneamento_educacao_atraso_escolar_dos_jovens_com_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ATRASO_G1&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_atraso_escolar_dos_jovens_sem_saneamento",
+            "indicator": "bs_edu_atr_esc_jovens_sem_san",
+            "descricao": "beneficios_do_saneamento_educacao_atraso_escolar_dos_jovens_sem_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ATRASO_G2&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_atraso_escolar_medio",
+            "indicator": "bs_edu_atr_esc_medio",
+            "descricao": "beneficios_do_saneamento_educacao_atraso_escolar_medio",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ATRASO_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_no_enem",
+            "indicator": "bs_edu_nmedia_enem",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_no_enem",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_M_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_no_enem_com_banheiro",
+            "indicator": "bs_edu_nmedia_enem_com_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_no_enem_com_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G1_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_no_enem_sem_banheiro",
+            "indicator": "bs_edu_nmedia_enem_sem_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_no_enem_sem_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G2_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_em_matematica",
+            "indicator": "bs_edu_nmedia_mat",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_em_matematica",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_M_MAT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_matematica_no_enem_com_banheiro",
+            "indicator": "bs_edu_nota_mat_enem_com_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_matematica_no_enem_com_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G1_MAT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_matematica_no_enem_sem_banheiro",
+            "indicator": "bs_edu_nota_mat_enem_sem_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_matematica_no_enem_sem_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G2_MAT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_em_redacao",
+            "indicator": "bs_edu_nmedia_red",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_em_redacao",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_M_RED&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_redacao_no_enem_com_banheiro",
+            "indicator": "bs_edu_nota_red_enem_com_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_redacao_no_enem_com_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G1_RED&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_redacao_no_enem_sem_banheiro",
+            "indicator": "bs_edu_nota_red_enem_sem_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_redacao_no_enem_sem_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G2_RED&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_em_ciencias_da_natureza",
+            "indicator": "bs_edu_nmedia_cienat",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_em_ciencias_da_natureza",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_M_CN&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_ciencias_da_natureza_no_enem_com_banheiro",
+            "indicator": "bs_edu_nota_cienat_enem_com_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_ciencias_da_natureza_no_enem_com_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G1_CN&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_ciencias_da_natureza_no_enem_sem_banheiro",
+            "indicator": "bs_edu_nota_cienat_enem_sem_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_ciencias_da_natureza_no_enem_sem_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G2_CN&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_em_ciencias_humanas",
+            "indicator": "bs_edu_nmedia_ciehum",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_em_ciencias_humanas",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_M_CH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_ciencias_humanas_no_enem_com_banheiro",
+            "indicator": "bs_edu_nota_ciehum_enem_com_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_ciencias_humanas_no_enem_com_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G1_CH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_ciencias_humanas_no_enem_sem_banheiro",
+            "indicator": "bs_edu_nota_ciehum_enem_sem_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_ciencias_humanas_no_enem_sem_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G2_CH&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_media_em_linguagens_e_codigos",
+            "indicator": "bs_edu_nmedia_lig_cod",
+            "descricao": "beneficios_do_saneamento_educacao_nota_media_em_linguagens_e_codigos",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_M_LC&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_linguagens_e_codigos_no_enem_com_banheiro",
+            "indicator": "bs_edu_nota_lig_cod_enem_com_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_linguagens_e_codigos_no_enem_com_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G1_LC&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_educacao_nota_em_linguagens_e_codigos_no_enem_sem_banheiro",
+            "indicator": "bs_edu_nota_lig_cod_enem_sem_ban",
+            "descricao": "beneficios_do_saneamento_educacao_nota_em_linguagens_e_codigos_no_enem_sem_banheiro",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=23&SE%5Bid%5D=ENEM_G2_LC&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_aluguel_medio_das_moradias_com_saneamento",
+            "indicator": "bs_valo_amb_alu_medio_mor_san",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_aluguel_medio_das_moradias_com_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=ALUGUEL_G1&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_aluguel_medio_das_moradias_sem_saneamento",
+            "indicator": "bs_valo_amb_alu_medio_mor_sem_san",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_aluguel_medio_das_moradias_sem_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=ALUGUEL_G2&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_valor_medio_dos_alugueis",
+            "indicator": "bs_valo_amb_valor_medio_alu",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_valor_medio_dos_alugueis",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=ALUGUEL_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_empregos_no_turismo",
+            "indicator": "bs_valo_amb_emp_tur",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_empregos_no_turismo",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=EMP_TUR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_parcela_dos_empregados_que_trabalha_no_setor_de_turismo",
+            "indicator": "bs_valo_amb_par_emp_trab_set_tur",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_parcela_dos_empregados_que_trabalha_no_setor_de_turismo",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=EMP_TUR%25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_renda_do_trabalho_no_turismo_com_saneamento",
+            "indicator": "bs_valo_amb_renda_trab_tur_san",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_renda_do_trabalho_no_turismo_com_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=RENDA_TURIS_G1&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_renda_do_trabalho_no_turismo_sem_saneamento",
+            "indicator": "bs_valo_amb_renda_trab_tur_sem_san",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_renda_do_trabalho_no_turismo_sem_saneamento",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=RENDA_TURIS_G2&SE%5Bo%5D=e"
         },
         {
-            "indicator": "beneficios_do_saneamento_valorizacao_ambiental_renda_media_do_trabalho_no_turismo",
+            "indicator": "bs_valo_amb_renda_media_trab_tur",
+            "descricao": "beneficios_do_saneamento_valorizacao_ambiental_renda_media_do_trabalho_no_turismo",
             "params": "SE%5Bg%5D=2&SE%5Bs%5D=24&SE%5Bid%5D=RENDA_TURIS_M&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_redes_extensao_da_rede_de_agua",
+            "indicator": "esf_uni_redes_ext_rede_agua",
+            "descricao": "esforco_para_universalizacao_redes_extensao_da_rede_de_agua",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=31&SE%5Bid%5D=EXTENS_AG&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_redes_variacao_anual_da_rede_de_agua",
+            "indicator": "esf_uni_redes_var_anual_rede_agua",
+            "descricao": "esforco_para_universalizacao_redes_variacao_anual_da_rede_de_agua",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=31&SE%5Bid%5D=EXTENS_AG_VAR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_redes_extensao_da_rede_de_esgoto",
+            "indicator": "esf_uni_redes_ext_rede_esgoto",
+            "descricao": "esforco_para_universalizacao_redes_extensao_da_rede_de_esgoto",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=31&SE%5Bid%5D=EXTENS_ES&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_redes_variacao_anual_da_rede_de_esgoto",
+            "indicator": "esf_uni_redes_var_anual_rede_esgoto",
+            "descricao": "esforco_para_universalizacao_redes_variacao_anual_da_rede_de_esgoto",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=31&SE%5Bid%5D=EXTENS_ES_VAR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_do_prestador",
+            "indicator": "esf_uni_esf_inv_prestador",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_do_prestador",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_PREST&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_do_municipio",
+            "indicator": "esf_uni_esf_inv_mun",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_do_municipio",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_MUN&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_do_governo_estadual",
+            "indicator": "esf_uni_esf_inv_gov_est",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_do_governo_estadual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_EST&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_totais",
+            "indicator": "esf_uni_esf_inv_totais",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_totais",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_deflatores_do_investimento",
+            "indicator": "esf_uni_esf_def_inv",
+            "descricao": "esforco_para_universalizacao_esforco_deflatores_do_investimento",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_DEFLA&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_do_prestador_em_2019",
+            "indicator": "esf_uni_esf_inv_prestador_2019",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_do_prestador_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_PREST_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_do_municipio_em_2019",
+            "indicator": "esf_uni_esf_inv_mun_2019",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_do_municipio_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_MUN_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_do_governo_estadual_em_2019",
+            "indicator": "esf_uni_esf_inv_gov_est_2019",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_do_governo_estadual_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_EST_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_totais_em_2019",
+            "indicator": "esf_uni_esf_inv_totais_2019",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_totais_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_esforco_investimentos_per_capta_em_2019",
+            "indicator": "esf_uni_esf_inv_prc_2019",
+            "descricao": "esforco_para_universalizacao_esforco_investimentos_per_capta_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=32&SE%5Bid%5D=INV_TOT_CTE&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_empregos_diretos_investimento",
+            "indicator": "esf_uni_impc_emp_dir_inv",
+            "descricao": "esforco_para_universalizacao_impactos_empregos_diretos_investimento",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_INV_DIR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_empregos_indiretos_investimento",
+            "indicator": "esf_uni_impc_emp_ind_inv",
+            "descricao": "esforco_para_universalizacao_impactos_empregos_indiretos_investimento",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_INV_IND&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_empregos_induzidos_investimento",
+            "indicator": "esf_uni_impc_emp_induz_inv",
+            "descricao": "esforco_para_universalizacao_impactos_empregos_induzidos_investimento",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_INV_INDUZ&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_emprego_total_investimento",
+            "indicator": "esf_uni_impc_emp_total_inv",
+            "descricao": "esforco_para_universalizacao_impactos_emprego_total_investimento",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_INV_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_diretos_investimento_em_2019",
+            "indicator": "esf_uni_impc_renda_dir_inv_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_diretos_investimento_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_INV_DIR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_indiretos_investimento_em_2019",
+            "indicator": "esf_uni_impc_renda_ind_inv_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_indiretos_investimento_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_INV_IND&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_induzidos_investimento_em_2019",
+            "indicator": "esf_uni_impc_renda_induz_inv_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_induzidos_investimento_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_INV_INDUZ&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_total_investimento_em_2019",
+            "indicator": "esf_uni_impc_renda_total_inv_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_total_investimento_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_INV_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_empregos_diretos_operacao",
+            "indicator": "esf_uni_impc_emp_dir_op",
+            "descricao": "esforco_para_universalizacao_impactos_empregos_diretos_operacao",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_OPER_DIR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_empregos_indiretos_operacao",
+            "indicator": "esf_uni_impc_emp_ind_op",
+            "descricao": "esforco_para_universalizacao_impactos_empregos_indiretos_operacao",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_OPER_IND&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_empregos_induzidos_operacao",
+            "indicator": "esf_uni_impc_emp_induz_op",
+            "descricao": "esforco_para_universalizacao_impactos_empregos_induzidos_operacao",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_OPER_INDUZ&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_empregos_total_operacao",
+            "indicator": "esf_uni_impc_emp_total_op",
+            "descricao": "esforco_para_universalizacao_impactos_empregos_total_operacao",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=EMP_OPER_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_diretos_operacao_em_2019",
+            "indicator": "esf_uni_impc_renda_dir_op_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_diretos_operacao_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_OPER_DIR&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_indiretos_operacao_em_2019",
+            "indicator": "esf_uni_impc_renda_ind_op_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_indiretos_operacao_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_OPER_IND&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_induzidos_operacao_em_2019",
+            "indicator": "esf_uni_impc_renda_induz_op_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_induzidos_operacao_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_OPER_INDUZ&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_impactos_renda_total_operacao_em_2019",
+            "indicator": "esf_uni_impc_renda_total_op_2019",
+            "descricao": "esforco_para_universalizacao_impactos_renda_total_operacao_em_2019",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=33&SE%5Bid%5D=RENDA_OPER_TOT&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_reducao_de_custos_com_saude_media_anual",
+            "indicator": "esf_uni_cus_benf_red_custos_saude_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_reducao_de_custos_com_saude_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_01&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_da_produtividade_no_trabalho_media_anual",
+            "indicator": "esf_uni_cus_benf_aumt_da_prod_no_trab_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_da_produtividade_no_trabalho_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_02&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_da_volorizacao_imobiliaria_media_anual",
+            "indicator": "esf_uni_cus_benf_renda_val_imob_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_da_volorizacao_imobiliaria_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_03&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_do_turismo_media_anual",
+            "indicator": "esf_uni_cus_benf_renda_do_tur_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_do_turismo_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_04&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_ganho_com_externalidades_media_anual",
+            "indicator": "esf_uni_cus_benf_ganho_ext_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_ganho_com_externalidades_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_05&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_investimento_media_anual",
+            "indicator": "esf_uni_cus_benf_rendger_inv_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_investimento_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_06&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_aumento_das_operacoes_media_anual",
+            "indicator": "esf_uni_cus_benf_rendger_pelo_aumt_op_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_aumento_das_operacoes_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_07&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_impostos_ligados_a_producao_media_anual",
+            "indicator": "esf_uni_cus_benf_imp_prod_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_impostos_ligados_a_producao_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_08&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_geracao_de_renda_media_anual",
+            "indicator": "esf_uni_cus_benf_gerrend_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_geracao_de_renda_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_09&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_beneficios_media_anual",
+            "indicator": "esf_uni_cus_benf_total_benf_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_beneficios_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_10&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_custo_do_investimento_media_anual",
+            "indicator": "esf_uni_cus_benf_custo_inv_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_custo_do_investimento_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_11&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_de_despesas_das_familias_media_anual",
+            "indicator": "esf_uni_cus_benf_aumt_de_desp_das_fam_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_de_despesas_das_familias_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_12&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_custos_media_anual",
+            "indicator": "esf_uni_cus_benf_total_custos_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_custos_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_13&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_balanco_custo_beneficio_media_anual",
+            "indicator": "esf_uni_cus_benf_cus_benf_media_anual",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_balanco_custo_beneficio_media_anual",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_14&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_reducao_dos_custos_com_a_saude_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_red_dos_custos_saude_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_reducao_dos_custos_com_a_saude_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_15&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_da_produtividade_do_trabalho_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_aumt_da_prod_trab_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_da_produtividade_do_trabalho_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_16&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_da_valorizacao_imobiliaria_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_renda_da_valorizacao_imob_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_da_valorizacao_imobiliaria_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_17&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_do_turismo_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_renda_do_tur_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_do_turismo_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_18&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_ganho_com_externalidades_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_ganho_ext_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_ganho_com_externalidades_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_19&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_investimento_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_rendger_inv_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_investimento_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_20&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_aumento_da_operacao_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_rendger_pelo_aumt_op_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_renda_gerada_pelo_aumento_da_operacao_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_21&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_impostos_ligados_a_producao_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_imp_prod_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_impostos_ligados_a_producao_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_22&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_geracao_de_renda_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_gerrend_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_geracao_de_renda_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_23&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_beneficios_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_total_benf_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_beneficios_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_24&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_custo_do_investimento_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_custo_inv_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_custo_do_investimento_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_25&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_de_despesas_das_familias_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_aumt_de_desp_das_fam_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_aumento_de_despesas_das_familias_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_26&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_custos_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_total_custos_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_total_de_custos_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_27&SE%5Bo%5D=e"
         },
         {
-            "indicator": "esforco_para_universalizacao_balanco_custo_beneficio_balanco_custo_beneficio_2017_a_2037",
+            "indicator": "esf_uni_cus_benf_cus_benf_2017_2037",
+            "descricao": "esforco_para_universalizacao_balanco_custo_beneficio_balanco_custo_beneficio_2017_a_2037",
             "params": "SE%5Bg%5D=3&SE%5Bs%5D=34&SE%5Bid%5D=BCB_28&SE%5Bo%5D=e"
         }
     ]
