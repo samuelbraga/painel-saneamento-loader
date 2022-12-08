@@ -49,6 +49,6 @@ class LoaderDB(ILoaderDB):
                         tipo_regiao=tipo_regiao,
                         valor=valor,
                         ano=anos[ano],
-                        ano_codigo_ibge=f'{ano}-{codigo_ibge}')
+                        ano_codigo_ibge=f'{anos[ano]}-{codigo_ibge}')
                     self.writer.write_file(table_name, insert)
         print(table_name, "DONE")
