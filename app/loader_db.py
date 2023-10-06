@@ -1,6 +1,7 @@
 from abc import abstractmethod
 
 import pandas
+
 from app.writer import IWriter
 
 
@@ -17,14 +18,14 @@ class ILoaderDB():
 class LoaderDB(ILoaderDB):
     def __init__(self, writer: IWriter) -> None:
         self.writer = writer
+        self.insert_value_template = (
+            '({codigo_ibge}, \'{nome_regiao}\', '
+            '\'{tipo_regiao}\', {valor}, {ano}, \'{ano_codigo_ibge}\'),')
         self.insert_template = (
             'INSERT INTO public.{table_name} '
             '(codigo_ibge, nome_regiao, '
             'tipo_regiao, valor, ano, ano_codigo_ibge) '
-            'VALUES '
-            '({codigo_ibge}, \'{nome_regiao}\', '
-            '\'{tipo_regiao}\', {valor}, {ano}, \'{ano_codigo_ibge}\') '
-            'ON CONFLICT (ano_codigo_ibge) DO NOTHING;')
+            'VALUES')
 
     def load_pandas_to_postgres_sql(
         self,
@@ -32,6 +33,8 @@ class LoaderDB(ILoaderDB):
         table_name: str
     ) -> None:
         print(table_name, "STARTED")
+        insert = self.insert_template.format(table_name=table_name)
+        self.writer.write_file(table_name, insert)
         columns = df.columns
         anos = [2021, 2020, 2019, 2018, 2017, 2016,
                 2015, 2014, 2013, 2012, 2011, 2010]
@@ -42,13 +45,14 @@ class LoaderDB(ILoaderDB):
             for ano in range(1, 12):
                 if (row[str(columns[ano])] != '-'):
                     valor = float(row[str(columns[ano])])
-                    insert = self.insert_template.format(
-                        table_name=table_name,
+                    insert_value = self.insert_value_template.format(
                         codigo_ibge=codigo_ibge,
                         nome_regiao=nome_regiao,
                         tipo_regiao=tipo_regiao,
                         valor=valor,
-                        ano=anos[ano],
-                        ano_codigo_ibge=f'{anos[ano]}-{codigo_ibge}')
-                    self.writer.write_file(table_name, insert)
+                        ano=ano,
+                        ano_codigo_ibge=f'{ano}-{codigo_ibge}')
+                    self.writer.write_file(table_name, insert_value)
+        self.writer.remove_last_character(table_name)
+        self.writer.write_file(table_name, ';')
         print(table_name, "DONE")
